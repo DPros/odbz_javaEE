@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
 @Controller
-public class TestController {
+//@RequestMapping("/")
+public class MainPageController {
 
-    @RequestMapping("/")
-    public String render(){
-        System.out.println("lalala");
-        return "test";
+    @RequestMapping
+    public String render() {
+        return "main";
     }
 }
